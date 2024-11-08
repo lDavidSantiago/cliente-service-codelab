@@ -10,7 +10,7 @@ services:
     networks:
       - red-backend-app
 
-  receiver-iot-service:
+  cliente-service:
     image: 'alvarosalazar/cliente-service:latest'
     ports:
       - '8080:8080'
