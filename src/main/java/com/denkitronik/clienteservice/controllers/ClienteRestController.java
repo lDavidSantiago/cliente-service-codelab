@@ -38,7 +38,7 @@ public class ClienteRestController {
 	// Servicio de subida de archivos inyectado
 	private final IUploadFileService uploadService;
 
-	// Constructor de la clase ClienteRestController que inyecta el servicio de cliente y el servicio de subida de archivos
+	// Constructor de la clas ClienteRestController que inyecta el servicio de cliente y el servicio de subida de archivos
 	public ClienteRestController(IClienteService clienteService, IUploadFileService uploadService) {
 		this.clienteService = clienteService;
 		this.uploadService = uploadService;
@@ -64,7 +64,7 @@ public class ClienteRestController {
 		try {
 			cliente = clienteService.findById(id);
 		} catch(DataAccessException e) {
-			response.put("mensaje", "Error al realizar la consulta en la base de datos");
+			response.put("mensaje", "Error al realizar la consulta en la base de datiños");
 			response.put("error", e.getMessage().concat(": ").concat(e.getMostSpecificCause().getMessage()));
 			return new ResponseEntity<Map<String, Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
