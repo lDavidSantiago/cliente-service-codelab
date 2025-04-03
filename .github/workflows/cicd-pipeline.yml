@@ -85,6 +85,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t alvarosalazar/cliente-service:latest .
-          docker push alvarosalazar/cliente-service:latest
+          docker build -t ldavidsantiagol/cliente-service:latest .
+          docker push ldavidsantiagol/cliente-service:latest
 
